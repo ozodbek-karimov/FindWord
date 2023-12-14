@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/gameEntry">
+
+    <fragment
+        android:id="@+id/gameEntry"
+        android:name="pl.ozodbek.findword.GameEntry"
+        android:label="fragment_game_entry"
+        tools:layout="@layout/fragment_game_entry" >
+        <action
+            android:id="@+id/action_gameEntry_to_gameProcess"
+            app:destination="@id/gameProcess" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameProcess"
+        android:name="pl.ozodbek.findword.GameProcess"
+        android:label="fragment_game_process"
+        tools:layout="@layout/fragment_game_process" />
+</navigation>
